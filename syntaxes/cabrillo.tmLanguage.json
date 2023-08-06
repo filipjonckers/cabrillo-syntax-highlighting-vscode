@@ -1,0 +1,85 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "cabrillo",
+	"patterns": [
+		{
+			"include": "#x-qso"
+		},
+		{
+			"include": "#start-of-log"
+		},
+		{
+			"include": "#end-of-log"
+		},
+		{
+			"include": "#header"
+		},
+		{
+			"include": "#qso"
+		}
+	],
+	"repository": {
+		"x-qso": {
+			"patterns": [{
+				"match": "^(?i)X-QSO:.*$",
+				"name": "comment.line.cabrillo"
+			}]
+		},
+		"start-of-log": {
+			"patterns": [{
+				"match": "^(?i)(?=START-OF-LOG)(\\S+)(:)\\s(.*)$",
+				"captures":  {
+					"1":  { "name": "meta" },
+					"2":  { "name": "string" },
+					"3":  { "name": "variable" }
+				}
+			}]
+		},
+		"end-of-log": {
+			"patterns": [{
+				"match": "^(?i)(?=END-OF-LOG)(\\S+)(:)\\s(.*)$",
+				"captures":  {
+					"1":  { "name": "meta" },
+					"2":  { "name": "string" },
+					"3":  { "name": "variable" }
+				}
+			}]
+		},
+		"header": {
+			"patterns": [{
+				"match": "^(?i)(?!QSO)(\\S+?)(:)\\s(.*)$",
+				"captures":  {
+					"1":  { "name": "entity.name" },
+					"2":  { "name": "string" },
+					"3":  { "name": "variable" }
+				}
+			}]
+		},
+		"qso": {
+			"match": "^(?i)(?=QSO)(QSO)(:)(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))(?:\\s*(\\S*))$",
+			"captures":  {
+				"1":  { "name": "keyword" },
+				"2":  { "name": "string" },
+				"3":  { "name": "storage" },
+				"4":  { "name": "variable" },
+				"5":  { "name": "constant" },
+				"6":  { "name": "keyword" },
+				"7":  { "name": "constant" },
+				"8":  { "name": "storage" },
+				"9":  { "name": "meta" },
+				"10":  { "name": "variable" },
+				"11":  { "name": "storage" },
+				"12":  { "name": "meta" },
+				"13":  { "name": "variable" },
+				"14":  { "name": "storage" },
+				"15":  { "name": "meta" },
+				"16":  { "name": "variable" },
+				"17":  { "name": "storage" },
+				"18":  { "name": "meta" },
+				"19":  { "name": "variable" }
+
+			}
+		}
+	},
+	"scopeName": "source.cabrillo"
+}
