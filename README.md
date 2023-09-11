@@ -47,6 +47,10 @@ None at this time.
 
 ## Release Notes
 
+### 1.0.2
+
+Added support for QTC records to support WAE CW/SSB/RTTY Contest.
+
 ### 1.0.1
 
 Initial release of Cabrillo file syntax highlighting extension for Visual Studio Code.
