@@ -1,11 +1,11 @@
 {
   "name": "cabrillo-syntax-highlighting",
-  "displayName": "CABRILLO contest log files syntax highlighting",
-  "description": "CABRILLO radio amateur contest log files syntax highlighting support",
+  "displayName": "CABRILLO contest log syntax highlighting",
+  "description": "Radio amateur CABRILLO contest log syntax highlighting support",
   "publisher": "filipjonckers",
   "icon": "icon.png",
   "pricing": "Free",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": "https://github.com/filipjonckers/cabrillo-syntax-highlighting-vscode",
   "engines": {
     "vscode": "^1.30.0"
@@ -18,8 +18,8 @@
   "contributes": {
     "languages": [{
       "id": "cabrillo",
-      "aliases": ["cabrillo", "cbr"],
-      "extensions": [".cbr",".cabrillo"],
+      "aliases": ["cabrillo", "cbr", "n1mm", "n1mm+", "arrl", "ham", "radio amateur", "contest"],
+      "extensions": [".cbr",".cabrillo",".log"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
