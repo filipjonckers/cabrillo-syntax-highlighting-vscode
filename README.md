@@ -20,7 +20,7 @@ A Cabrillo log file consists of a header and the actual QSO data.  The QSO data 
 
 Example:
 
-![sample](https://github.com/filipjonckers/cabrillo-syntax-highlighting-vscode/blob/master/images/sample.png?raw=true)
+![sample](images/sample.png)
 
 ## About the author
 
