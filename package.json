@@ -5,7 +5,7 @@
   "publisher": "filipjonckers",
   "icon": "icon.png",
   "pricing": "Free",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "https://github.com/filipjonckers/cabrillo-syntax-highlighting-vscode",
   "engines": {
     "vscode": "^1.30.0"
