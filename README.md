@@ -2,17 +2,17 @@
 
 ## Features
 
-This extension enables syntax highlighting of the Cabrillo contest log file format.  The standard file extensions is CBR.
+This extension provides syntax highlighting for the Cabrillo contest log file format.  The standard file extensions are **.CBR** and **.LOG**.
 
 ## What is the Cabrillo file format
 
-Ever since software has become a part of amateur radio, there have been as many data formats as there have been ham radio software programmers.  The Cabrillo Specification was originally developed by Trey Garlough, N5KO to provide a method for consistent data formatting that sponsors could use in the submission of contest logs. Contest sponsors including CQ, ARRL, and DARC quickly supported the idea. More importantly and key to its viability, leading program authors such as K1EA, N6TR, K8CC, W5XD, EI5DI and others also embraced the concept.
+Ever since software became a part of amateur radio, there have been as many data formats as there were ham radio software developers. The Cabrillo Specification was originally developed by Trey Garlough, N5KO, to provide a standardized format for contest log submissions. Contest sponsors including CQ, ARRL, and DARC quickly supported the idea. More importantly, and key to its viability, leading software authors such as K1EA, N6TR, K8CC, W5XD, EI5DI, and others also embraced the concept.
 
-Since its earliest days, the Cabrillo Specification has been the recognized gold standard for contest logs and has revolutionized the contesting world. It has enabled many contests to support electronic log submission and automate the log checking process. The WWROF administers the Cabrillo Specification on behalf of the contesting community.
+Since its inception, the Cabrillo Specification has been recognized as the gold standard for contest logs and has revolutionized the contesting world. It has enabled many contests to support electronic log submission and automate the log-checking process. The WWROF administers the Cabrillo Specification on behalf of the contesting community.  The [Cabrillo file format specifications are available at https://wwrof.org/cabrillo](https://wwrof.org/cabrillo).
 
-Currently the Cabrillo contest log format is widely adopted as the standard format to import and export Radio Amateur contest logbooks between various software applications and to submit the log to the contest organisers.
+Today, the Cabrillo contest log format is widely adopted as the standard for importing and exporting amateur radio contest logs between software applications and submitting logs to contest organizers.
 
-A Cabrillo log file consists of a header and the actual QSO data.  The QSO data is depicted in a tabular format delimited by whitespaces.  The number of columns and field content is specific for each contest.  Below are a few examples for some of the most popular contests:
+A Cabrillo log file consists of a header and the actual QSO data. The QSO data is presented in a tabular format, delimited by whitespace. The number of columns and field content is specific to each contest. Below are a few examples from some of the most popular contests:
 
 - [CQ WW DX Contest](http://www.cqww.com/cabrillo.htm)
 - [CQ WPX Contest](http://www.cqwpx.com/cabrillo.htm)
@@ -20,7 +20,7 @@ A Cabrillo log file consists of a header and the actual QSO data.  The QSO data 
 
 Example:
 
-![sample](images/sample.png)
+![sample](https://raw.githubusercontent.com/filipjonckers/cabrillo-syntax-highlighting-vscode/refs/heads/master/images/sample.png)
 
 ## About the author
 
@@ -28,10 +28,15 @@ Filip Jonckers is a licensed radio amateur since 1993 with the HAM radio callsig
 
 ## What is Amateur Radio
 
-Radio amateurs can be found almost in every country and in various circles.
-They represent a motley collection of backgrounds and professions. They have one thing in common: their passion for technology and for radio. Among them were the late King Hussein of Jordan, his fellow King Juan Carlos of Spain and the late Indian Prime Minister Rhajiv Ghandi. Carlos Menem, president of Argentina, also joined radio amateurs. But there is room for you too.
+Radio amateurs can be found in nearly every country and from all walks of life.
+They represent a diverse mix of backgrounds and professions, united by one common passion: a love for technology and radio.
 
-You too can become a radio amateur! You will then join the circle of friends of more than a million licensed radio amateurs worldwide.
+Among their ranks are notable figures such as the late King Hussein of Jordan; King Juan Carlos of Spain; Joe Walsh (WB6ACU), guitarist of the Eagles; Marlon Brando (FO5GJ), actor; Tim Allen (KK6OTD), actor and comedian; Julio Iglesias (EA4TD), singer; and the late Indian Prime Minister Rajiv Gandhi. Carlos Menem, former president of Argentina, was also a licensed amateur radio operator.
+
+But there’s room for you too.
+
+You too can become a radio amateur!
+Join a global community of over a million licensed radio enthusiasts and be part of a worldwide circle of friends.
 
 ## Requirements
 
@@ -45,15 +50,17 @@ None.
 
 None at this time.
 
-## Release Notes
+## Latest Release Notes
 
-### 1.0.2
+See [CHANGELOG.md]
 
-Added support for QTC records to support WAE CW/SSB/RTTY Contest.
+### v2.0.1
 
-### 1.0.1
-
-Initial release of Cabrillo file syntax highlighting extension for Visual Studio Code.
+- Completely refactored the syntax highlighting patterns/regex
+- Improved coloring
+- Better support for different types of multipliers
+- Station number support
+- Bump Node.js version to 18
 
 ## Support and bug reports
 
