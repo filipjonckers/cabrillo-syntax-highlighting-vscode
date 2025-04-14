@@ -26,9 +26,12 @@ jobs:
     - name: Package
       run: vsce package
 
-    - name: Artifact
+    - name: Verify Artifact
+      run: ls -l *.vsix
+
+    - name: Upload Artifact
       if: success()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         path: "*.vsix"
 
